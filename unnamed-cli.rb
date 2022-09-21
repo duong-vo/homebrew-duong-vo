@@ -5,11 +5,11 @@
 class UnnamedCli < Formula
   desc ""
   homepage "https://github.com/duong-vo/unnamed-cli"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
-    url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.4/unnamed-cli_0.1.4_darwin_all.tar.gz"
-    sha256 "fe468cc2d6444f9a20855b32d709677f16a92b0df5db65339b2e3a01b90b39ed"
+    url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.5/unnamed-cli_0.1.5_darwin_all.tar.gz"
+    sha256 "2d6dbd5928c6c18a785a40abc1dddc61199b5e0a8ec4ef2d0ce30ed15e2b65e1"
 
     def install
       bin.install "unnamed-cli"
@@ -18,16 +18,16 @@ class UnnamedCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.4/unnamed-cli_0.1.4_linux_arm64.tar.gz"
-      sha256 "083faafa1230d40c6e6fb9b0aa359146c3a6bc943f865ceb8ffe576fb1227eab"
+      url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.5/unnamed-cli_0.1.5_linux_arm64.tar.gz"
+      sha256 "8863dd91defa2f0c25e1dcd5dd992f77039e68593cbfdd0dad29b75011e845e3"
 
       def install
         bin.install "unnamed-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.4/unnamed-cli_0.1.4_linux_amd64.tar.gz"
-      sha256 "4efcbbc2a2d215c1c84010ba6b5179b48ae3682cf5c99f2325d513fcbd19ddf2"
+      url "https://github.com/duong-vo/unnamed-cli/releases/download/v0.1.5/unnamed-cli_0.1.5_linux_amd64.tar.gz"
+      sha256 "d16fffe85e3352a13ea9b8f710d0039c1462b5d8955bb17e5ea95b5584b25a44"
 
       def install
         bin.install "unnamed-cli"
